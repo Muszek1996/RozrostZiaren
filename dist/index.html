@@ -361,7 +361,6 @@ window.initState = function (i, j) {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
     start();
     document.getElementById("workingCanvas").addEventListener('click', function (event) {
 
@@ -372,7 +371,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (document.getElementById("InitState").options[document.getElementById("InitState").selectedIndex].value == "wyklinanie") window.initState(yClickIndex, xClickIndex);
         //window.board.cellsArray[yClickIndex][xClickIndex].click().getNeighbourCount();
     }, false);
-});
 
 function getCursorPosition(canvas, event) {
     var x, y;
